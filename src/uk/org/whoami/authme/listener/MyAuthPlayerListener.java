@@ -50,7 +50,7 @@ import uk.org.whoami.authme.settings.Settings;
 import uk.org.whoami.authme.task.MessageTask;
 import uk.org.whoami.authme.task.TimeoutTask;
 
-public class AuthMePlayerListener extends PlayerListener {
+public class MyAuthPlayerListener extends PlayerListener {
 
     private Settings settings = Settings.getInstance();
     private Messages m = Messages.getInstance();
