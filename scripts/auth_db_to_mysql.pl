@@ -29,14 +29,14 @@ $dbh->do('CREATE TABLE `authme` (
          `lastlogin` BIGINT,
          CONSTRAINT `table_const_prim` PRIMARY KEY (`id`));');
 
-my $st = 'INSERT INTO `authme` (`username`, `password`, `ip`, `lastlogin`) VALUES ';
+my $st = 'INSERT INTO `myauth` (`username`, `password`, `ip`, `lastlogin`) VALUES ';
 my $i = 0;
 
 while(<FILE>) {
     if($i == 1000) {
         $i = 0;
         $dbh->do($st);
-        $st = 'INSERT INTO `authme` (`username`, `password`, `ip`, `lastlogin`) VALUES ';
+        $st = 'INSERT INTO `myauth` (`username`, `password`, `ip`, `lastlogin`) VALUES ';
     }
     my @auth = split(':');
     
