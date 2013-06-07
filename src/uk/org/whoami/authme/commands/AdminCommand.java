@@ -44,18 +44,18 @@ public class AdminCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmnd, String label, String[] args) {
         if (args.length == 0) {
-            sender.sendMessage("Usage: /authme reload|register playername password|changepassword playername password|unregister playername|purge");
+            sender.sendMessage("Usage: /myauth reload|register playername password|changepassword playername password|unregister playername|purge");
             return true;
         }
 
-        if (!sender.hasPermission("authme.admin." + args[0].toLowerCase())) {
+        if (!sender.hasPermission("myauth.admin." + args[0].toLowerCase())) {
             sender.sendMessage(m._("no_perm"));
             return true;
         }
 
         if (args[0].equalsIgnoreCase("purge")) {
             if (args.length != 2) {
-                sender.sendMessage("Usage: /authme purge <DAYS>");
+                sender.sendMessage("Usage: /myauth purge <DAYS>");
                 return true;
             }
 
@@ -66,7 +66,7 @@ public class AdminCommand implements CommandExecutor {
                 sender.sendMessage("Deleted " + database.purgeDatabase(until) + " user accounts");
 
             } catch (NumberFormatException e) {
-                sender.sendMessage("Usage: /authme purge <DAYS>");
+                sender.sendMessage("Usage: /myauth purge <DAYS>");
                 return true;
             }
         } else if (args[0].equalsIgnoreCase("reload")) {
@@ -76,7 +76,7 @@ public class AdminCommand implements CommandExecutor {
             sender.sendMessage(m._("reload"));
         } else if (args[0].equalsIgnoreCase("register")) {
             if (args.length != 3) {
-                sender.sendMessage("Usage: /authme register playername password");
+                sender.sendMessage("Usage: /myauth register playername password");
                 return true;
             }
 
@@ -102,7 +102,7 @@ public class AdminCommand implements CommandExecutor {
             }
         } else if (args[0].equalsIgnoreCase("changepassword")) {
             if (args.length != 3) {
-                sender.sendMessage("Usage: /authme changepassword playername newpassword");
+                sender.sendMessage("Usage: /myauth changepassword playername newpassword");
                 return true;
             }
 
@@ -134,7 +134,7 @@ public class AdminCommand implements CommandExecutor {
             }
         } else if (args[0].equalsIgnoreCase("unregister")) {
             if (args.length != 2) {
-                sender.sendMessage("Usage: /authme unregister playername");
+                sender.sendMessage("Usage: /myauth unregister playername");
                 return true;
             }
 
@@ -150,7 +150,7 @@ public class AdminCommand implements CommandExecutor {
 
             ConsoleLogger.info(args[1] + " unregistered");
         } else {
-            sender.sendMessage("Usage: /authme reload|register playername password|changepassword playername password|unregister playername");
+            sender.sendMessage("Usage: /myauth reload|register playername password|changepassword playername password|unregister playername");
         }
         return true;
     }
