@@ -26,7 +26,7 @@ import uk.org.whoami.authme.citizens.CitizensCommunicator;
 import uk.org.whoami.authme.datasource.DataSource;
 import uk.org.whoami.authme.settings.Settings;
 
-public class AuthMeBlockListener extends BlockListener {
+public class MyAuthBlockListener extends BlockListener {
 
     private DataSource data;
     private Settings settings = Settings.getInstance();
