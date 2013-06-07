@@ -41,9 +41,9 @@ import uk.org.whoami.authme.datasource.DataSource;
 import uk.org.whoami.authme.datasource.FileDataSource;
 import uk.org.whoami.authme.datasource.MiniConnectionPoolManager.TimeoutException;
 import uk.org.whoami.authme.datasource.MySQLDataSource;
-import uk.org.whoami.authme.listener.AuthMeBlockListener;
-import uk.org.whoami.authme.listener.AuthMeEntityListener;
-import uk.org.whoami.authme.listener.AuthMePlayerListener;
+import uk.org.whoami.authme.listener.MyAuthBlockListener;
+import uk.org.whoami.authme.listener.MyAuthEntityListener;
+import uk.org.whoami.authme.listener.MyAuthPlayerListener;
 import uk.org.whoami.authme.settings.Messages;
 import uk.org.whoami.authme.settings.Settings;
 import uk.org.whoami.authme.task.MessageTask;
@@ -93,9 +93,9 @@ public class MyAuth extends JavaPlugin {
             database = new CacheDataSource(database);
         }
 
-        AuthMePlayerListener playerListener = new AuthMePlayerListener(this, database);
-        AuthMeBlockListener blockListener = new AuthMeBlockListener(database);
-        AuthMeEntityListener entityListener = new AuthMeEntityListener(database);
+        MyAuthPlayerListener playerListener = new MyAuthPlayerListener(this, database);
+        MyAuthBlockListener blockListener = new MyAuthBlockListener(database);
+        MyAuthEntityListener entityListener = new MyAuthEntityListener(database);
 
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvent(Event.Type.PLAYER_COMMAND_PREPROCESS, playerListener,
