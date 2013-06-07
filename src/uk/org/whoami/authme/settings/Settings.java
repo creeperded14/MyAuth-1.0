@@ -28,7 +28,7 @@ import uk.org.whoami.authme.security.PasswordSecurity.HashAlgorithm;
 
 public final class Settings extends Configuration {
 
-    public static final String PLUGIN_FOLDER = "./plugins/AuthMe";
+    public static final String PLUGIN_FOLDER = "./plugins/MyAuth";
     public static final String CACHE_FOLDER = Settings.PLUGIN_FOLDER + "/cache";
     public static final String AUTH_FILE = Settings.PLUGIN_FOLDER + "/auths.db";
     public static final String MESSAGE_FILE = Settings.PLUGIN_FOLDER + "/messages.yml";
