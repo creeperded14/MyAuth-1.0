@@ -31,7 +31,7 @@ public class AuthMeBlockListener extends BlockListener {
     private DataSource data;
     private Settings settings = Settings.getInstance();
 
-    public AuthMeBlockListener(DataSource data) {
+    public MyAuthBlockListener(DataSource data) {
         this.data = data;
     }
 
