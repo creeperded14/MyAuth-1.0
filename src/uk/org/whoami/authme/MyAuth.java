@@ -49,7 +49,7 @@ import uk.org.whoami.authme.settings.Settings;
 import uk.org.whoami.authme.task.MessageTask;
 import uk.org.whoami.authme.task.TimeoutTask;
 
-public class AuthMe extends JavaPlugin {
+public class MyAuth extends JavaPlugin {
 
     private DataSource database;
     private Settings settings;
@@ -133,7 +133,7 @@ public class AuthMe extends JavaPlugin {
         pm.registerEvent(Event.Type.ENTITY_TARGET, entityListener,
                          Priority.Lowest, this);
 
-        this.getCommand("authme").setExecutor(new AdminCommand(database));
+        this.getCommand("myauth").setExecutor(new AdminCommand(database));
         this.getCommand("register").setExecutor(new RegisterCommand(database));
         this.getCommand("login").setExecutor(new LoginCommand(database));
         this.getCommand("changepassword").setExecutor(new ChangePasswordCommand(database));
@@ -141,7 +141,7 @@ public class AuthMe extends JavaPlugin {
         this.getCommand("unregister").setExecutor(new UnregisterCommand(this, database));
 
         onReload(this.getServer().getOnlinePlayers());
-        ConsoleLogger.info("Authme " + this.getDescription().getVersion() + " enabled");
+        ConsoleLogger.info("Myauth " + this.getDescription().getVersion() + " enabled");
     }
 
     @Override
@@ -149,7 +149,7 @@ public class AuthMe extends JavaPlugin {
         if (database != null) {
             database.close();
         }
-        ConsoleLogger.info("Authme " + this.getDescription().getVersion() + " disabled");
+        ConsoleLogger.info("Myauth " + this.getDescription().getVersion() + " disabled");
     }
 
     private void onReload(Player[] players) {
