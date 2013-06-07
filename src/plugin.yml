@@ -1,8 +1,8 @@
-name: AuthMe
-author: whoami
-description: AuthMe prevents people, which aren't logged in, from doing stuff like placing blocks, moving, typing commands or seeing the inventory of the current player.
+name: MyAuth
+author: creeperded14
+description: The MyAuth is a plugin based AuthMe, it serves to protect the inventories and the reputation of the player concerned.
 main: uk.org.whoami.authme.AuthMe
-version: 2.6
+version: 1.2
 commands:
     register:
         description: Register an account
@@ -19,53 +19,53 @@ commands:
     unregister:
         description: unregister your account
         usage: /unregister password
-    authme:
-        description: AuthMe op commands
+    myauth:
+        description: MyAuth op commands
         usage: '/authme reload|register playername password|changepassword playername password|unregister playername'
 permissions:
-    authme.*:
-        description: Gives access to all authme commands
+    myauth.*:
+        description: Gives access to all myauth commands
         children:
-            authme.register: true
-            authme.login: true
-            authme.changepassword: true
-            authme.logout: true
-            authme.unregister: true
-    authme.admin.*:
-         description: Gives access to all authme admin commands
+            myauth.register: true
+            myauth.login: true
+            myauth.changepassword: true
+            myauth.logout: true
+            myauth.unregister: true
+    myauth.admin.*:
+         description: Gives access to all myauth admin commands
          children:
-             authme.admin.reload: true
-             authme.admin.register: true
-             authme.admin.changepassword: true
-             authme.admin.unregister: true
-             authme.admin.purge: true
-    authme.register:
+             myauth.admin.reload: true
+             myauth.admin.register: true
+             myauth.admin.changepassword: true
+             myauth.admin.unregister: true
+             muauth.admin.purge: true
+    myauth.register:
         description: Register an account
         default: true
-    authme.login:
+    myauth.login:
         description: Login into a account
         default: true
-    authme.changepassword:
+    myauth.changepassword:
         description: Change password of a account
         default: true
-    authme.logout:
+    myauth.logout:
         description: Logout
         default: true
-    authme.unregister:
+    myauth.unregister:
         description: unregister your account
         default: true
-    authme.admin.reload:
-        description: AuthMe reload commands
+    myauth.admin.reload:
+        description: MyAuth reload commands
         default: op
-    authme.admin.register:
-        description: AuthMe register command
+    myauth.admin.register:
+        description: MyAuth register command
         default: op
-    authme.admin.changepassword:
-        description: AuthMe changepassword command
+    myauth.admin.changepassword:
+        description: MyAuth changepassword command
         default: op
-    authme.admin.unregister:
-        description: AuthMe unregister command
+    myauth.admin.unregister:
+        description: MyAuth unregister command
         default: op
-    authme.admin.purge:
-        description: AuthMe unregister command
+    myauth.admin.purge:
+        description: MyAuth unregister command
         default: op
