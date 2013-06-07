@@ -8,6 +8,6 @@ build.xml
 jarlib/**
 \.orig$
 \.orig\..*$
-\.chg\..*$
+\.chg\...*$
 \.rej$
 \.conflict\~$
