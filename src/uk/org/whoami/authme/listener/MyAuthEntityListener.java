@@ -28,7 +28,7 @@ import uk.org.whoami.authme.citizens.CitizensCommunicator;
 import uk.org.whoami.authme.datasource.DataSource;
 import uk.org.whoami.authme.settings.Settings;
 
-public class AuthMeEntityListener extends EntityListener {
+public class MyAuthEntityListener extends EntityListener {
 
     private DataSource data;
     private Settings settings = Settings.getInstance();
