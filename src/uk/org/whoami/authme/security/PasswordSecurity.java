@@ -133,6 +133,6 @@ public class PasswordSecurity {
 
     public enum HashAlgorithm {
 
-        MD5, SHA1, SHA256, WHIRLPOOL, XAUTH
+        MD5, SHA1, SHA256, WHIRLPOOL, XAUTH, AUTHME
     }
 }
