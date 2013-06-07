@@ -23,10 +23,10 @@ public class ConsoleLogger {
     private static final Logger log = Logger.getLogger("Minecraft");
 
     public static void info(String message) {
-        log.info("[AuthMe] " + message);
+        log.info("[MyAuth] " + message);
     }
 
     public static void showError(String message) {
-        log.severe("[AuthMe] ERROR: " + message);
+        log.severe("[MyAuth] ERROR: " + message);
     }
 }
