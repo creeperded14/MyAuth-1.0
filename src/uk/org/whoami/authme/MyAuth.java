@@ -49,7 +49,7 @@ import uk.org.whoami.authme.settings.Settings;
 import uk.org.whoami.authme.task.MessageTask;
 import uk.org.whoami.authme.task.TimeoutTask;
 
-public class MyAuth extends JavaPlugin {
+public class MyAuthe extends JavaPlugin {
 
     private DataSource database;
     private Settings settings;
