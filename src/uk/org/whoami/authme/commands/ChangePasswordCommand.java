@@ -47,7 +47,7 @@ public class ChangePasswordCommand implements CommandExecutor {
             return true;
         }
 
-        if (!sender.hasPermission("authme." + label.toLowerCase())) {
+        if (!sender.hasPermission("myauth." + label.toLowerCase())) {
             sender.sendMessage(m._("no_perm"));
             return true;
         }
