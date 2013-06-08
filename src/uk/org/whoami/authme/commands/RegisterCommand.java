@@ -1,5 +1,5 @@
 /*
- * Copyright 2011 Sebastian Köhler <sebkoehler@whoami.org.uk>.
+ *Copyright 2013 creeperde14 [creeperdedpt@gmail.com]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package uk.org.whoami.authme.commands;
+package uk.org.creeperded14.myauth.commands;
 
 import java.security.NoSuchAlgorithmException;
 import java.util.Date;
@@ -25,15 +25,15 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import uk.org.whoami.authme.ConsoleLogger;
-import uk.org.whoami.authme.cache.auth.PlayerAuth;
-import uk.org.whoami.authme.cache.auth.PlayerCache;
-import uk.org.whoami.authme.cache.limbo.LimboCache;
-import uk.org.whoami.authme.cache.limbo.LimboPlayer;
-import uk.org.whoami.authme.datasource.DataSource;
-import uk.org.whoami.authme.security.PasswordSecurity;
-import uk.org.whoami.authme.settings.Messages;
-import uk.org.whoami.authme.settings.Settings;
+import uk.org.creeperded14.myauth.ConsoleLogger;
+import uk.org.creeperded14.myauth.cache.auth.PlayerAuth;
+import uk.org.creeperded14.myauth.cache.auth.PlayerCache;
+import uk.org.creeperded14.myauth.cache.limbo.LimboCache;
+import uk.org.creeperded14.myauth.cache.limbo.LimboPlayer;
+import uk.org.creeperded14.myauth.datasource.DataSource;
+import uk.org.creeperded14.myauth.security.PasswordSecurity;
+import uk.org.creeperded14.myauth.settings.Messages;
+import uk.org.creeperded14.myauth.settings.Settings;
 
 public class RegisterCommand implements CommandExecutor {
 
