@@ -1,8 +1,8 @@
 name: MyAuth
 author: creeperded14
 description: The MyAuth is a plugin based AuthMe, it serves to protect the inventories and the reputation of the player concerned.
-main: uk.org.whoami.authme.AuthMe
-version: 1.2
+main: uk.org.creeperded14.myauth.MyAuth
+version: 1.0
 commands:
     register:
         description: Register an account
