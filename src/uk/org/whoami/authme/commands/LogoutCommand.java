@@ -1,5 +1,5 @@
 /*
- * Copyright 2011 Sebastian Köhler <sebkoehler@whoami.org.uk>.
+ *Copyright 2013 creeperde14 [creeperdedpt@gmail.com]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package uk.org.whoami.authme.commands;
+package uk.org.creeperded14.myauth.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -24,15 +24,15 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
 
-import uk.org.whoami.authme.ConsoleLogger;
-import uk.org.whoami.authme.cache.auth.PlayerAuth;
-import uk.org.whoami.authme.cache.auth.PlayerCache;
-import uk.org.whoami.authme.cache.limbo.LimboCache;
-import uk.org.whoami.authme.datasource.DataSource;
-import uk.org.whoami.authme.settings.Messages;
-import uk.org.whoami.authme.settings.Settings;
-import uk.org.whoami.authme.task.MessageTask;
-import uk.org.whoami.authme.task.TimeoutTask;
+import uk.org.creeperded14.myauth.ConsoleLogger;
+import uk.org.creeperded14.myauth.cache.auth.PlayerAuth;
+import uk.org.creeperded14.myauth.cache.auth.PlayerCache;
+import uk.org.creeperded14.myauth.cache.limbo.LimboCache;
+import uk.org.creeperded14.myauth.datasource.DataSource;
+import uk.org.creeperded14.myauth.settings.Messages;
+import uk.org.creeperded14.myauth.settings.Settings;
+import uk.org.creeperded14.myauth.task.MessageTask;
+import uk.org.creeperded14.myauth.task.TimeoutTask;
 
 public class LogoutCommand implements CommandExecutor {
 
