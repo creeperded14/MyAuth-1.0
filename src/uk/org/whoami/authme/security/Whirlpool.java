@@ -1,4 +1,4 @@
-package uk.org.whoami.authme.security;
+package uk.org.creeperded14.myauth.security;
 
 /**
  * The Whirlpool hashing function.
