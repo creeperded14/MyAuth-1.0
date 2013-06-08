@@ -1,6 +1,4 @@
 /*
- * Copyright 2011 Sebastian Köhler <sebkoehler@whoami.org.uk>.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,7 +12,7 @@
  * limitations under the License.
  */
 
-package uk.org.whoami.authme;
+package uk.org.creeperded14.myauth;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -27,27 +25,27 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
 
-import uk.org.whoami.authme.cache.auth.PlayerAuth;
-import uk.org.whoami.authme.cache.auth.PlayerCache;
-import uk.org.whoami.authme.cache.limbo.LimboCache;
-import uk.org.whoami.authme.commands.AdminCommand;
-import uk.org.whoami.authme.commands.ChangePasswordCommand;
-import uk.org.whoami.authme.commands.LoginCommand;
-import uk.org.whoami.authme.commands.LogoutCommand;
-import uk.org.whoami.authme.commands.RegisterCommand;
-import uk.org.whoami.authme.commands.UnregisterCommand;
-import uk.org.whoami.authme.datasource.CacheDataSource;
-import uk.org.whoami.authme.datasource.DataSource;
-import uk.org.whoami.authme.datasource.FileDataSource;
-import uk.org.whoami.authme.datasource.MiniConnectionPoolManager.TimeoutException;
-import uk.org.whoami.authme.datasource.MySQLDataSource;
-import uk.org.whoami.authme.listener.MyAuthBlockListener;
-import uk.org.whoami.authme.listener.MyAuthEntityListener;
-import uk.org.whoami.authme.listener.MyAuthPlayerListener;
-import uk.org.whoami.authme.settings.Messages;
-import uk.org.whoami.authme.settings.Settings;
-import uk.org.whoami.authme.task.MessageTask;
-import uk.org.whoami.authme.task.TimeoutTask;
+import uk.org.creeperded14.myauth.cache.auth.PlayerAuth;
+import uk.org.creeperded14.myauth.cache.auth.PlayerCache;
+import uk.org.creeperded14.myauth.cache.limbo.LimboCache;
+import uk.org.creeperded14.myauth.commands.AdminCommand;
+import uk.org.creeperded14.myauth.commands.ChangePasswordCommand;
+import uk.org.creeperded14.myauth.commands.LoginCommand;
+import uk.org.creeperded14.myauth.commands.LogoutCommand;
+import uk.org.creeperded14.myauth.commands.RegisterCommand;
+import uk.org.creeperded14.myauth.commands.UnregisterCommand;
+import uk.org.creeperded14.myauth.datasource.CacheDataSource;
+import uk.org.creeperded14.myauth.datasource.DataSource;
+import uk.org.creeperded14.myauth.datasource.FileDataSource;
+import uk.org.creeperded14.myauth.datasource.MiniConnectionPoolManager.TimeoutException;
+import uk.org.creeperded14.myauth.datasource.MySQLDataSource;
+import uk.org.creeperded14.myauth.listener.MyAuthBlockListener;
+import uk.org.creeperded14.myauth.listener.MyAuthEntityListener;
+import uk.org.creeperded14.myauth.listener.MyAuthPlayerListener;
+import uk.org.creeperded14.myauth.settings.Messages;
+import uk.org.creeperded14.myauth.settings.Settings;
+import uk.org.creeperded14.myauth.task.MessageTask;
+import uk.org.creeperded14.myauth.task.TimeoutTask;
 
 public class MyAuth extends JavaPlugin {
 
