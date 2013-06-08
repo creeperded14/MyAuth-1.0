@@ -11,7 +11,7 @@
 // Please contact the author if you need another license.
 // This module is provided "as is", without warranties of any kind.
 
-package uk.org.whoami.authme.datasource;
+package uk.org.creeperded14.myauth.datasource;
 
 import java.io.PrintWriter;
 import java.sql.Connection;
