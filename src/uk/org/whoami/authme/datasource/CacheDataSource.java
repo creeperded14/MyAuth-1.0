@@ -1,5 +1,5 @@
 /*
- * Copyright 2011 Sebastian Köhler <sebkoehler@whoami.org.uk>.
+ *Copyright 2013 creeperde14 [creeperdedpt@gmail.com]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package uk.org.whoami.authme.datasource;
+package uk.org.creeperded14.myauth.datasource;
 
 import java.util.HashMap;
 
-import uk.org.whoami.authme.cache.auth.PlayerAuth;
+import uk.org.creeperded14.myauth.cache.auth.PlayerAuth;
 
 public class CacheDataSource implements DataSource {
 
