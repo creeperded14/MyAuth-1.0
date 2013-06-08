@@ -1,5 +1,5 @@
 /*
- * Copyright 2011 Sebastian Köhler <sebkoehler@whoami.org.uk>.
+ * Copyright 2013 creeperde14 [creeperdedpt@gmail.com]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package uk.org.whoami.authme.settings;
+package uk.org.creeperded14.myauth.settings;
 
 import java.io.File;
 
 import org.bukkit.util.config.Configuration;
 
-import uk.org.whoami.authme.ConsoleLogger;
-import uk.org.whoami.authme.datasource.DataSource;
-import uk.org.whoami.authme.datasource.DataSource.DataSourceType;
-import uk.org.whoami.authme.security.PasswordSecurity;
-import uk.org.whoami.authme.security.PasswordSecurity.HashAlgorithm;
+import uk.org.creeperded14.myauth.ConsoleLogger;
+import uk.org.creeperded14.myauth.datasource.DataSource;
+import uk.org.creeperded14.myauth.datasource.DataSource.DataSourceType;
+import uk.org.creeperded14.myauth.security.PasswordSecurity;
+import uk.org.creeperded14.myauth.security.PasswordSecurity.HashAlgorithm;
 
 public final class Settings extends Configuration {
 
